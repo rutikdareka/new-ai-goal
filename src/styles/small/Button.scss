@@ -1,0 +1,25 @@
+@import "../global.scss";
+
+.button_container {
+  width: 100%;
+  background-color: $primary-color;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+
+  & .button_subcontainer {
+    width: 100%;
+
+    & button {
+      width: inherit;
+      color: white;
+      padding: 8px;
+      @include align(center);
+      border: none;
+      outline: none;
+      font-weight: 600;
+      background-color: inherit;
+      cursor: pointer;
+    }
+  }
+}

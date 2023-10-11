@@ -1,0 +1,28 @@
+@import "../global.scss";
+
+.input_container {
+  background: var(--ligh-background-color-searchbar);
+  padding: 8px;
+  border-radius: 5px;
+  margin: 15px 0px 15px 0px;
+  display: flex;
+  align-items: center;
+  & input {
+    outline: none;
+    border: none;
+    background: inherit;
+    font-weight: 500;
+    font-size: $small-font-size;
+    width: 100%;
+    color: var(--secondary-font-color);
+  }
+  :focus {
+    outline: none;
+    border: none;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--input-mode-font-color);
+    font-weight: 500;
+  }
+}
